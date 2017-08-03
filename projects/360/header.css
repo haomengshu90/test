@@ -1,0 +1,16 @@
+@charset "utf-8";
+ul{list-style-type:none;}
+div.content{width:1000px;margin:0 auto;}
+/*header部分样式*/
+header{border:0px;}
+div.logo{height:27px;width:152px;float:left;margin-top:10px;background-image:url("images/iconlist_1.png");background-repeat:no-repeat;background-position:-870px -100px;}
+header ul{float:right;}
+header ul li{float:left;position:relative;}
+header ul li a{display:block;text-decoration:none;padding:0 15px;height:47px;line-height:47px;color:#5c5c5c;transition:border 1s;}
+a.android,a.ios{width:66px;height:26px;background-image:url("images/iconlist_2.png");margin-top:12px;}
+a.android{background-position:-1655px -508px;}
+a.ios{background-position:-1655px -535px;}
+#android_code{width:180px;height:210px;background-image:url("images/iconlist_2.png");background-position:-1655px -297px;
+				position:absolute;top:48px;display:none;}
+#android:hover div{display:block;}
+header ul li a:not([class]):hover,a.current{border-bottom:3px solid #f2595c;}

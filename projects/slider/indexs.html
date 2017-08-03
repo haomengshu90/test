@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel='' type='text/css' href='./indexs.css'>
+	<script src="./jquery-1.11.3.js" type="text/javascript"></script>
+	<style>
+		ul,li,ol{
+			list-style: none;
+		}
+		body{
+			background: #ccc;
+		}
+		.carousel{
+			position: relative;
+		    width: 500px;
+		    height: 350px;
+		    margin: 40px auto;
+		    overflow: hidden;
+		}
+		.carousel h2{
+			text-align:center;
+		}		
+		.carousel .carousel-content{
+			position: absolute;
+			width:2500px;
+			height: 350px;
+		}
+		.carousel .carousel-content img{
+			float:left;
+			width:500px;
+			height: 350px;
+
+		}
+		/* 切换按钮 */
+		.carousel a{
+			position: absolute;
+			top:150px;
+			display: block;
+			width:40px;
+			height:50px;
+			background: #000;
+			opacity: 0.5;
+			font-weight: 600;
+			text-align: center;
+			line-height:50px;
+			color:#fff;
+			font-size:30px;
+		}
+		.carousel a.prev{
+			left:0px;
+		}
+		.carousel a.next{
+			right:0px;
+		}
+		.carousel ul{
+			position: absolute;
+			bottom:20px;
+			right:30px;
+		}
+		.carousel ul li{
+			float: left;
+			width:20px;
+			height:20px;
+			border-radius: 50%;
+			background:#ccc;
+			text-align:center;
+			line-height:20px;
+			margin-right:5px;
+		}
+		.carousel ul li.on{
+			background:red;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class='carousel'>
+		<h2>轮播特效</h2>
+		<div class="carousel-content">
+			<img src='./img/car.jpg'>
+			<img src='./img/Clothes.jpg'>
+			<img src='./img/Cosmetics.jpg'>
+			<img src='./img/Digital.jpg'>
+			<img src='./img/food.jpg'>
+		</div>
+		<a class='prev'><</a>
+		<a class='next'>></a>
+		<ul class='carousel-num'>
+			<li class='on'>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var Width=$('.carousel').width();
+		var num=0;
+		/*鼠标点击数字上时图片轮播*/
+		$('.carousel-num li').click(function(){
+			var index=$(this).index();
+			$(this).addClass('on').siblings().removeClass('on');
+			$('.carousel-content').animate({'left':-Width*index+'px'})
+		})
+		
+		/*按左右按钮时进行轮播*/		
+		function animate(){
+			$('.carousel-num li').eq(num).addClass('on').siblings().removeClass('on');
+			$('.carousel-content').animate({'left':-Width*num+'px'})
+		}
+		/*按左按钮时进行轮播*/
+		$('.prev').click(function(){
+			num--;
+			if(num<0){
+				num=$('.carousel-num li').length-1;
+			}
+			animate();
+		})
+		/*按右按钮时进行轮播*/
+		$('.next').click(function(){
+			num++;
+			if(num>=$('.carousel-num li').length){
+				num=0
+			}
+			animate();
+		})
+
+		/*自动动画*/
+		var timer=setInterval(Infinite,1000);		
+		function Infinite(){
+			num++;
+			if(num>=$('.carousel-num li').length){
+				num=0;
+			}
+			animate();
+		}
+		/*鼠标停留在画面时停止自动动画，离开恢复*/
+		$('.carousel').mouseover(function(){
+			clearInterval(timer);
+		});
+		$('.carousel').mouseout(function(){
+			timer=setInterval(Infinite,1000);	
+		});
+		
+	})		
+
+	</script>
+</body>
+</html>

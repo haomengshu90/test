@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*icons*/
+#icons{overflow: hidden;height:400px;}
+#icons ul{padding-top:80px;}
+#icons li{float:left;width:310px;height:150px;margin:10px;}
+#icons li>b{float:left;width:80px;height:80px;background-image:url(images/iconlist_3.png);margin-right:10px;}
+#icons li>b:hover{-webkit-animation:ball 0.5s linear 2;}
+@-webkit-keyframes ball{
+	0%{transform:rotate(0deg); opacity:1;}
+	25%{transform:rotate(-10deg);opacity:0.5;}
+	50%{transform:rotate(0deg);opacity:1;}
+	75%{transform:rotate(10deg);opacity:0.5;}
+	100%{transform:rotate(0deg);opacity:1;}
+}
+#icons ul li.t2 b{background-position:-85px 0;}
+#icons ul li.t2 h3{color:#f05257;}
+#icons ul li.t3 b{background-position:-170px 0}
+#icons ul li.t3 h3{color:#16caf5;}
+#icons ul li.t4 b{background-position:0 -86px;}
+#icons ul li.t4 h3{color:#8bd857;}
+#icons ul li.t5 b{background-position:-86px -86px;}
+#icons ul li.t5 h3{color:#fe9651;}
+#icons ul li.t6 b{background-position:-170px -86px;}
+#icons ul li.t6 h3{color:#af99fd;}

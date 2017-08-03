@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*布局*/
+*{margin:0px;padding:0px;}
+body{font-size:12pt;color:#666;font-family:"Microsoft Yahei" Arial;}
+header,section,footer{width:100%;}
+#description,#tixing,#icons{width:80%;margin:0px auto;}
+header{height:50px;}
+#banner{height:550px;}
+#description,#hujiao,#tixing,#dingwei,#icons{height:650px;}
+#footer{height:170px;clear:both;}

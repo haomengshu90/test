@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*一键呼叫部分*/
+#hujiao{background-image:url(images/bg_2.jpg);background-size:120% 120%;}
+#hujiao>div{width:50%;height:500px;text-align:right;margin-top:100px;padding-right:50px;float:left;}
+#hujiao>div>h3{color:#fae364;font-size:28pt;height:90px; line-height:90px;margin:40px 0;}
+#hujiao>div>h3>b{display:block;width:85px;height:85px;background-image:url("images/iconlist_2.png");background-position:-434px -117px;float:right;margin-left:10px;}
+#hujiao>div>p{color:#8b7f73;font-size:14pt;line-height:30px;}
+#hujiao>b{display:block;width:255px;height:530px;float:left;background-image:url("images/iconlist_2.png");background-position:-570px 0;margin-left:80px;margin-top:20px;transition:transform 2s;}
+#hujiao>b:hover{transform:rotate(30deg);}

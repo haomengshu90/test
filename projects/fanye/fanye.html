@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.wrapper{
+			width: 700px;
+			height:400px;
+			margin:50px auto;
+			position: relative;
+			perspective: 800px;
+		}
+		.wrapper>span{
+			position: absolute;
+			width: 350px;
+			height: 400px;
+			top:0;
+			/*background-size:100% 100%;*/
+		}
+		.wrapper .left{
+			left:0;
+		}
+		.wrapper .right{
+			right:0;
+			background-position: -350px 0;
+		}
+		.wrapper .center{
+			position: absolute;
+			z-index:200;
+			width: 350px;
+			height:400px; 
+			transform-style: preserve-3d;
+			transform-origin: left center;
+			top:0;
+			right:0;
+		}
+		.wrapper .center>span{
+			position: absolute;
+			width: 350px;
+			height: 400px;
+			left:0;
+			top:0;
+		}
+		.wrapper .center .front{
+			z-index:200;
+			backface-visibility:hidden;
+			background-position: -350px 0;
+		}
+		.wrapper .center .back{
+			z-index:199;
+			transform: scale(-1,1);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<span class="left"></span>
+		<div class="center">
+			<span class="front"></span>
+			<span class="back"></span>
+		</div>
+		<span class="right"></span>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		var num=0;
+		setImage();
+		$('.wrapper').click(function(){
+			$('.center').css({'transition':'10s','transform':'rotateY(-180deg)'});
+		});
+		$('.center').on('transitionend',function(){
+			num++;
+			setImage();
+			$('.center').css({'transition':'','transform':''});
+		});
+		function setImage(){
+			$('.left').css({'backgroundImage':'url(img/'+num%4+'.jpg)'});
+			$('.right').css({'backgroundImage':'url(img/'+(num+1)%4+'.jpg)'});
+			$('.front').css({'backgroundImage':'url(img/'+num%4+'.jpg)'});
+			$('.back').css({'backgroundImage':'url(img/'+(num+1)%4+'.jpg)'});
+		}
+	</script>
+</body>
+</html>

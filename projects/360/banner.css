@@ -1,0 +1,85 @@
+@charset "utf-8";
+/**banner部分*****/
+#banner{background-image:url("images/bg_1.jpg");border:0;background-color:#dedede;background-size:100% 100%;overflow:hidden;}
+div.title{width:456px; height:60px; margin:0 auto;background-image:url("images/iconlist_1.png");
+			background-position:-870px 0;margin-top:120px;}
+div.title+p{text-align:center;color:#7e7e7e;font-size:14pt;}
+/*5个小球*/
+#banner ul{width:780px;margin:50px auto;}
+#banner ul li{width:174px;position:relative;b}
+#banner ul li i,#banner ul li b{position:absolute;background-image:url("images/iconlist_1.png");}
+#banner ul li i{width:174px; height:174px;z-index:1;position:absolute;}
+#banner ul b{width:173px;height:24px;background-position:-868px -127px;top:160px;}
+/*给小球定位*/
+#banner ul li.intro_2 i{background-position:-173px 0;}
+#banner ul li.intro_2{left:150px; z-index:2;}
+#banner ul li.intro_3 i{background-position:-348px 0;}
+#banner ul li.intro_3{left:300px; z-index:3;}
+#banner ul li.intro_4 i{background-position:-522px 0;}
+#banner ul li.intro_4{left:450px;z-index:4}
+#banner ul li.intro_5 i{background-position:-696px 0;}
+#banner ul li.intro_5{left:600px;z-index:5;}
+/*第5个球*/
+@-webkit-keyframes move5{
+/*-492.72-->600*/
+	from{left:-493.72px;}
+	to{left:600px;}
+}
+#banner ul li.intro_5{-webkit-animation:move5 4s linear;}
+@-webkit-keyframes roll5{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(720deg);}
+}
+#banner ul li.intro_5 i{-webkit-animation:roll5 4s linear;}
+
+/*第4个球*/
+@-webkit-keyframes move4{
+/*-492.72-->450*/
+	from{left:-493.72px;}
+	to{left:450px;}
+}
+#banner ul li.intro_4{-webkit-animation:move4 3.5s linear;}
+@-webkit-keyframes roll4{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(720deg);}
+}
+#banner ul li.intro_4 i{-webkit-animation:roll4 3.5s linear;}
+
+/*第3个球*/
+@-webkit-keyframes move3{
+/*-492.72-->300*/
+	from{left:-493.72px;}
+	to{left:300px;}
+}
+#banner ul li.intro_3{-webkit-animation:move3 2.9s linear;}
+@-webkit-keyframes roll3{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(720deg);}
+}
+#banner ul li.intro_3 i{-webkit-animation:roll3 2.9s linear;}
+
+/*第2个球*/
+@-webkit-keyframes move2{
+/*-492.72-->150*/
+	from{left:-493.72px;}
+	to{left:150px;}
+}
+#banner ul li.intro_2{-webkit-animation:move2 2.4s linear;}
+@-webkit-keyframes roll2{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(720deg);}
+}
+#banner ul li.intro_2 i{-webkit-animation:roll2 2.4s linear;}
+
+/*第1个球*/
+@-webkit-keyframes move1{
+/*-492.72-->0*/
+	from{left:-493.72px;}
+	to{left:0px;}
+}
+#banner ul li.intro_1{-webkit-animation:move1 1.8s linear;}
+@-webkit-keyframes roll1{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(720deg);}
+}
+#banner ul li.intro_1 i{-webkit-animation:roll1 1.8s linear;}

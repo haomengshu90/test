@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*description部分*/
+#description{border:0;text-align:center;}
+#description>h3,#description>p{padding-top:30px;}
+#description>h3{font-size:28pt;font-weight:normal;font-family:"华文细黑";color:#424242;}
+#description>p{font-size:13pt;line-height:30px;color:#949494;}
+#description>div{width:638px;height:298px;background-image:url("images/iconlist_2.png");background-position:-1655px 0;margin:45px auto 0 auto;}

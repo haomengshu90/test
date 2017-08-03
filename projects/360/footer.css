@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*footer*/
+#footer a:hover{text-decoration:underline;}
+#footer{background-color:#383838;overflow: hidden;}
+#footer>div{width:1000px;margin:0px auto;}
+#footer>div>ul{float:left;margin-top:20px;}
+#footer ul.gz_us{margin-left:30px}
+#footer ul.xg_internet{margin-left:70px;}
+#footer ul.sao{margin-left:150px;}
+#footer ul li span>a{font-size:14pt;height:30px;line-height:30px;}
+#footer ul li a{font-size:12pt;height:28px;line-height:28px;text-decoration:none;color:#969581;}
+ul.sao li{float:left;margin-right:30px;}
+ul.sao li b{float:left;width:111px;height:120px;background-image:url(images/iconlist_2.png);background-position:0 -590px;}
+ul.sao li.weixin b{background-position:-216px -594px;}
+ul.sao li:not([class]){margin-top:25px;}
+#footer>p{clear:both;text-align:center;margin-top:500px;height:20px;line-height:20px;}
+#footer li>p>a{color:#838383;}
+
+
+
+
+

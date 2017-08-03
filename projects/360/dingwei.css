@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*定位功能*/
+#dingwei{background-image:url(images/bg_4.jpg);background-size:}
+#dingwei>b{float:right;width:255px;height:530px;background-image:url(images/iconlist_2.png);background-position:-900px 0;margin:30px 230px 0 0;transition:transform 2s;}
+#dingwei>div{float:left;width:50%;height:500px;text-align:right;margin-right:50px;margin-top:100px;}
+#dingwei>div>p{font-size:14pt;color:#8b7f73;line-height:30px;margin-top:20px;}
+#dingwei>div>h3{font-size:30pt;color:#19c9f4;font-weight:normal;height:90px;line-height:90px;}
+#dingwei>div>h3>b{float:right;width:85px;height:85px;background-image:url(images/iconlist_2.png);background-position:-1205px -116px;margin-left:20px;}
+#dingwei>b:hover{transform:rotate(30deg);}

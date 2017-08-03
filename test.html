@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人简历</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script><!-- 滚动条插件 -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/pie-chart.js" ></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<!-- header -->	
+<!-- 插入音乐 -->
+<audio src='audio/adi.mp3'  loop id='audio'></audio>
+<div class="header-top">
+	<div class="container">
+		<ul>
+			
+			<li><a class="scroll" href="#about"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>主页</a></li>
+			<li><a class="scroll" href="#emailme"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>联系我</a></li>
+			<li><a href="javascript:window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印</a></li>
+			<li><a href="#portfolioModal9" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>My Photo</a></li>
+			<li class='svg'><span class='glyphicon glyphicon-play' id='control'></span><img src='svg/audio.svg' width="20" id='svg'></li>
+		</ul>
+	</div>
+</div>	
+<div class="header">
+	<div class="container">
+		<div class="col-md-8 header-left">
+			<div class="col-sm-5 pro-pic">
+				<img class="img-responsive" src="images/pic1.jpg" alt=" "/>
+			</div>
+			<div class="col-sm-5 pro-text">
+				<h1>郝梦书</h1>
+				<h3>web前端</h3>
+				<p>路漫漫其修远兮.吾将上下而求索!</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 header-right ">
+			<ul class="list-left">
+				<li>Email:</li>
+				<li>Github:</li>
+				<li>Phone:</li>
+				<li>WeChat: </li>
+				<li>Blog: </li>
+			</ul>
+			<ul class="list-right">
+				<li><a href="mailto:info@example.com">1648263527@qq.com</a></li>
+				<li><a href="mailto:info@example.com">github.com/SkyLin0909</a></li>
+				<li>183-2184-2410</li>
+				<li>17071899359</li>
+				<li>http://blog.sina.com.cn/u/5890756149</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- header-end -->
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<h3 class="tittle">About Me</h3>
+		<p class="abt-para">
+			精通HTML及HTML5等页面技术，熟悉HTML5中的canvas.精通CSS，能够熟练运用CSS3中的动画效果。熟悉响应式设计.	熟悉JavaScript脚本语言，并且对JavaScript中面向对象中的原型和闭包及继承等内容有很好的理解.熟悉Jquery、Bootstrap、Ajax、Less,了解,AngularJS,Jquery-mobile框架和less框架的使用。
+            熟练前端工程化、组件化、模块化.
+        </br>正在学习PHP，MySQL数据库中...</p>
+
+			
+	</div>
+	<div class="col-md-6 abt-left ">
+		<div class="accordion">
+			<div class="accordion-section">
+				<h5><a class="accordion-section-title" href="#accordion-1">
+					<span>学 &nbsp; &nbsp; &nbsp; &nbsp;历</span> 全日制专科
+				<div class="clearfix"></div>
+				</a></h5>
+			</div>
+			<div class="accordion-section">
+				<h5><a class="accordion-section-title" href="#accordion-2">
+					<span>专 &nbsp; &nbsp; &nbsp; &nbsp;业</span> 计算机软件
+				<div class="clearfix"></div>
+				</a></h5>
+			</div>
+			<div class="accordion-section">
+				<h5><a class="accordion-section-title" href="#accordion-3">
+					<span>年 &nbsp; &nbsp; &nbsp; &nbsp;龄</span> 27
+				<div class="clearfix"></div>
+				</a></h5>
+			</div>
+			<div class="accordion-section">
+				<h5><a class="accordion-section-title" href="#accordion-4">
+					<span>工作年限</span> 2年
+					<div class="clearfix"></div>
+				</a></h5>
+			</div>
+			<div class="accordion-section">
+				<h5><a class="accordion-section-title" href="#accordion-4">
+					<span>目前状态</span> 离职
+					<div class="clearfix"></div>
+				</a></h5>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 abt-right ">
+		<div class="col-sm-4 abt-gd-left text-center">
+			<div id="demo-pie-1" class="pie-title-center" data-percent="85">
+				<span class="pie-value"></span>
+			</div>
+			<h4>HTML</h4>
+		</div>
+		<div class="col-sm-4 abt-gd-left text-center">		   
+			<div id="demo-pie-2" class="pie-title-center" data-percent="85">
+				<span class="pie-value"></span>
+			</div>
+			<h4>CSS</h4>
+		</div>
+		<div class="col-sm-4 abt-gd-left text-center">		   
+			<div id="demo-pie-3" class="pie-title-center" data-percent="70">
+				<span class="pie-value"></span>
+			</div>
+			<h4>JavaScript</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- about-end -->
+<!-- more skills -->
+<div class="more">
+	<div class="container">
+		<h3 class="tittle ">Skills</h3>
+		<div class="col-md-6 skill-left ">
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" style="width: 30%">Photoshop
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning " style="width: 50%">
+					<span class="sr-only"></span>
+				</div>
+				<p>80%</p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success1" style="width: 30%">ajax
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning1" style="width: 45%">
+					<span class="sr-only"></span>
+				</div>
+				<p>75%</p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success3" style="width: 30%">H5,css3
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning3 " style="width: 50%">
+					<span class="sr-only"></span>
+				</div>
+				<p>80%</p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success2" style="width: 30%">Less
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning2" style="width: 40%">
+					<span class="sr-only"></span>
+				</div>
+				<p>70%</p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success5" style="width: 30%">Bootstrap
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning5" style="width: 40%">
+					<span class="sr-only"></span>
+				</div>
+				<p>70%</p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="progress no-marg">
+				<div class="progress-bar progress-bar-success4" style="width: 30%">jQuery
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning4" style="width: 55%">
+					<span class="sr-only"></span>
+				</div>
+				<p>85%</p>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="col-md-6 skill-right ">
+			<div class="scrollbar scrollbar1">
+				<div class="more-gds">
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
+					</div>
+					<div class="col-sm-9 more-right">
+						<h4>Design</h4>
+						<p>没有UI的情况下，能熟练使用Bootstrap进行页面样式布局</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-9 more-right2">
+						<h4>移动端</h4>
+						<p> 能帮助app端写一些简单内嵌的h5页面</p>
+					</div>
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+					</div>
+					<div class="col-sm-9 more-right">
+						<h4>兼容性</h4>
+						<p>能够处理浏览器（ie9+、chrome、firefox）间的差异，解决开发中遇到的浏览器兼容性问题</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-9 more-right2">
+						<h4>提升计划</h4>
+						<p>努力学习一些后台和服务器知识，比如Node.js</p>
+					</div>
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- more skills-end -->
+<!-- work experience -->
+<div class="employment">
+	<div class="container">
+		<h3 class="tittle ">Work Experience</h3>
+		<p class="abt-para "></p>
+		<div class="col-md-6 employ-left">
+			<h4>01</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>中高软信息技术(北京)有限公司</h5>
+			<p>2013/03 -- 2013/12</p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>上海动娱网络科技有限公司<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>2016/01 -- 2017/06</p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>02</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- work experience-end -->
+<!-- portfolio -->
+<div class="portfolio">
+	<div class="container">
+		<h3 class="tittle ">Portfolio</h3>
+		<div class="portfolio-grids">			
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Project</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Demo</span></li>
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0" style='display: block'>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/2048/2048.html"  target='_blank' class="portfolio-link b-link-diagonal b-animate-go" >
+										<img src="images/01.jpg" alt="" title="2048小游戏，放松一下吧">
+										<div class="team_pos">
+											<!-- <ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul> -->
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/360/360.html" class='portfolio-link b-link-diagonal b-animate-go' target='_blank'><img src="images/06.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/fly/index.html" target='_blank' class="portfolio-link b-link-diagonal b-animate-go"><img src="images/03.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/weidou/index.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/10.png" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/Web_jishiben/localStorage.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/09.png" alt="" >
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/fanye/fanye.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/12.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/jd_yanzheng/regist.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/07.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/slider/indexs.html" class="portfolio-link b-link-diagonal b-animate-go" target="_blank"><img src="images/11.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/2048/2048.html"  target='_blank' class="portfolio-link b-link-diagonal b-animate-go" >
+										<img src="images/01.jpg" alt="" title="2048小游戏，放松一下吧">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/360/360.html" class='portfolio-link b-link-diagonal b-animate-go' target='_blank'><img src="images/06.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/fly/index.html" target='_blank' class="portfolio-link b-link-diagonal b-animate-go"><img src="images/03.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="projects/weidou/index.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/10.png" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/Web_jishiben/localStorage.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/09.png" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/fanye/fanye.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/12.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/jd_yanzheng/regist.html" class="portfolio-link b-link-diagonal b-animate-go" target='_blank'><img src="images/07.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+								<div class="thumb">
+									<a href="projects/slider/indexs.html" class="portfolio-link b-link-diagonal b-animate-go" target="_blank"><img src="images/11.jpg" alt="">
+									<div class="team_pos">
+										<ul>
+											<li>
+												<div class="morph pic fb_icon1">
+												</div>
+											</li>
+										</ul>
+									</div>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- portfolio-end -->
+<!-- contact -->
+<div id="emailme" class="contact">
+	<div class="container">
+		<h3 class="tittle">Contact</h3>
+		<div class="col-md-6 contact-left ">
+			<div class="horizontal-tab">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
+					<li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Hire me</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active in" id="tab1">
+						<div class="contact-form">
+							<ul>
+								<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>上海市浦东新区区, <span>浦东北路思学路.</span></li>
+								<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">1648263527@qq.com</a></li>
+								<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>18321842410</li>
+							</ul>
+							<form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+								<input type="submit" value="Submit" >
+							</form>
+						</div>
+					 
+					</div>
+					<div class="tab-pane" id="tab2">
+					  <div class="contact-form">
+							<form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Description...</textarea>
+								<input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+									<div class="fileUpload btn btn-primary">
+										<span>Upload</span>
+										<input id="uploadBtn" type="file" class="upload" />
+									</div>
+								<input type="submit" value="Send Request" >
+							</form>
+							<script>
+								document.getElementById("uploadBtn").onchange = function () {
+									document.getElementById("uploadFile").value = this.value;
+								};
+							</script>
+						</div>
+					</div>
+					
+				</div>
+            </div>
+		</div>
+		<div class="col-md-6 contact-right ">
+			<iframe src="baidumap.html" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">&copy 2017 Resume. All rights reserved | Design by <a href="https://github.com/SkyLin0909">Sky_lin</a></p>
+	</div>
+</div>
+<!-- contact-end -->
+
+<!-- smooth scrolling -->
+
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
